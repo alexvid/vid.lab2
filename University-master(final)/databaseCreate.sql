@@ -24,7 +24,7 @@ DELIMITER //
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `UpdateStudent`(IN StudentID INT,IN StudentName varchar(45), IN StudentBirthDate date, IN StudentAddress varchar(45))
 BEGIN
-UPDATE studentregister
+UPDATE student
      SET   Name=StudentName, BirthDate= StudentBirthDate, Address = StudentAddress
      WHERE ID = StudentID ;
 END//
